@@ -7,5 +7,4 @@ public abstract class Pedal {
 
     private boolean pedalPressed;
 
-    public abstract void logAction();
 }

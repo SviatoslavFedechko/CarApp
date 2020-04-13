@@ -1,6 +1,6 @@
 package com.company.model.Pedals;
 
-import static com.company.utils.msgConstants.CAR_IS_STOPPED;
+import static com.company.utills.msgConstants.CAR_IS_STOPPED;
 
 import com.company.service.LogService;
 import com.company.service.LogServiceConsoleImpl;

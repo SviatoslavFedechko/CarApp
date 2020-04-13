@@ -1,7 +1,5 @@
 package com.company;
 
-import com.company.model.Car;
-import com.company.model.Pedals.Pedal;
 import com.company.service.EngineService;
 import com.company.service.EngineServiceImpl;
 import com.company.service.GearboxService;

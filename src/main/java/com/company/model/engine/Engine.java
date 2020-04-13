@@ -8,4 +8,9 @@ public class Engine {
     private Key key;
     private GasPedal gasPedal;
 
+    public void startEngine() {
+        key.InsertKey();
+        key.TurnKey();
+    }
+
 }

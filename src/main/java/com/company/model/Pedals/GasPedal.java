@@ -1,7 +1,5 @@
 package com.company.model.Pedals;
 
-import static com.company.utils.msgConstants.CAR_MOVING_FORWARD;
-
 import com.company.service.LogService;
 import com.company.service.LogServiceConsoleImpl;
 import lombok.Data;
@@ -15,8 +13,4 @@ public class GasPedal extends Pedal {
         this.logService = new LogServiceConsoleImpl();
     }
 
-
-    public void logAction() {
-        logService.logInfo(CAR_MOVING_FORWARD);
-    }
 }
