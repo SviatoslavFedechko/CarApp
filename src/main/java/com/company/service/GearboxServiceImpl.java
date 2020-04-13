@@ -1,5 +1,5 @@
 package com.company.service;
 
-public class GearboxServiceImpl {
+public class GearboxServiceImpl implements GearboxService{
 
 }

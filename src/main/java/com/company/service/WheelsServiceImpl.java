@@ -1,5 +1,5 @@
 package com.company.service;
 
-public class WheelsServiceImpl {
+public class WheelsServiceImpl implements WheelsService{
 
 }
