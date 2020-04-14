@@ -1,6 +1,6 @@
 package com.company.model.wheels;
 
-import com.company.model.Pedals.BrakePedal;
+import com.company.model.pedals.BrakePedal;
 
 public class Wheels {
 

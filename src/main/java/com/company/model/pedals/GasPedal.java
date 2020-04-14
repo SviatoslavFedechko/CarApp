@@ -1,4 +1,4 @@
-package com.company.model.Pedals;
+package com.company.model.pedals;
 
 import com.company.service.LogService;
 import com.company.service.LogServiceConsoleImpl;

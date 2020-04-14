@@ -1,4 +1,4 @@
-package com.company.model.Pedals;
+package com.company.model.pedals;
 
 import lombok.Data;
 

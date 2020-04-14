@@ -1,6 +1,6 @@
 package com.company.service;
 
-import com.company.model.Pedals.Pedal;
+import com.company.model.pedals.Pedal;
 
 public interface PedalService {
 

@@ -1,6 +1,6 @@
 package com.company.model.engine;
 
-import com.company.model.Pedals.GasPedal;
+import com.company.model.pedals.GasPedal;
 
 public class Engine {
 
