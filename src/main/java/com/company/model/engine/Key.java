@@ -2,26 +2,26 @@ package com.company.model.engine;
 
 public class Key {
 
-    private boolean keyInserted;
+    private boolean inserted;
 
-    public void InsertKey() {
-        if(!keyInserted){
-            this.keyInserted = true;
+    public void insertKey() {
+        if(!inserted){
+            this.inserted = true;
         } else {
             throw new IllegalArgumentException("The key is already inserted");
         }
     }
 
-    public void RemoveKey() {
-        if(keyInserted){
-            this.keyInserted = false;
+    public void removeKey() {
+        if(inserted){
+            this.inserted = false;
         } else {
             throw new IllegalArgumentException("The key is not inserted");
         }
     }
 
-    public void TurnKey() {
-        if(keyInserted){
+    public void turnKey() {
+        if(inserted){
             System.out.println("The engine is running");
         } else {
             throw new IllegalArgumentException("The key is not inserted");

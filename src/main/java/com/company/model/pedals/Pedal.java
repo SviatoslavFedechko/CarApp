@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public abstract class Pedal {
 
-    private boolean pedalPressed;
+    private boolean pressed;
 
 }

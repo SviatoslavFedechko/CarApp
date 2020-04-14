@@ -4,13 +4,13 @@ import com.company.model.pedals.GasPedal;
 
 public class Engine {
 
-    private boolean engineOn;
+    private boolean on;
     private Key key;
     private GasPedal gasPedal;
 
     public void startEngine() {
-        key.InsertKey();
-        key.TurnKey();
+        key.insertKey();
+        key.turnKey();
     }
 
 }

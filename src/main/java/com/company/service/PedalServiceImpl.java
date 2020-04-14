@@ -5,7 +5,7 @@ import com.company.model.pedals.Pedal;
 public class PedalServiceImpl implements PedalService {
 
     public void pressPedal(Pedal pedal) {
-        pedal.setPedalPressed(true);
+        pedal.setPressed(true);
         pedal.logAction();
     }
 
