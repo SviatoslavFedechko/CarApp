@@ -1,4 +1,4 @@
-package com.company.model.gearbox;
+package com.company.carapp.model;
 
 public enum DriveMode {
 
