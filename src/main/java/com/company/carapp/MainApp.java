@@ -43,13 +43,12 @@ public class MainApp {
     }
 
     private static Car getCar() {
-        CarState state = new CarIsOffState();
         Engine engine = new Engine();
         IgnitionLock ignitionLock = new IgnitionLock(engine);
         Wheels wheels = new Wheels(ignitionLock);
         Gearbox gearbox = new Gearbox(engine);
         return Car.builder()
-            .state(state)
+            .state(new CarIsOffState())
             .engine(engine)
             .wheels(wheels)
             .gearbox(gearbox)
