@@ -8,10 +8,10 @@ import lombok.extern.java.Log;
 public class IgnitionLock {
 
     private State state;
-    private Engine engine;
+    private final Engine engine;
 
     public IgnitionLock(Engine engine) {
-        this.state = State.EMPTY;
+        state = State.EMPTY;
         this.engine = engine;
     }
 
@@ -22,7 +22,7 @@ public class IgnitionLock {
 
     public void insertKey() {
         if (State.EMPTY == state) {
-            this.state = State.OFF;
+            state = State.OFF;
         } else {
             log.severe("The key is already inserted");
             throw new IllegalStateException("The key is already inserted");

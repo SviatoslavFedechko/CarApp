@@ -3,16 +3,16 @@ package com.company.carapp.model;
 public class Wheels {
 
     private State state;
-    private IgnitionLock ignitionLock;
+    private final IgnitionLock ignitionLock;
 
     public Wheels(IgnitionLock ignitionLock) {
-        this.state = State.STEER_STRAIGHT;
+        state = State.STEER_STRAIGHT;
         this.ignitionLock = ignitionLock;
     }
 
     public void steerLeft() {
         if (IgnitionLock.State.ON != ignitionLock.getState()){
-            throw new IllegalStateException("The key is already inserted");
+            throw new IllegalStateException("Ignition lock is not On");
         }
         state = State.STEER_LEFT;
     }
@@ -25,7 +25,6 @@ public class Wheels {
     }
 
     public enum State {
-
         STEER_LEFT,
         STEER_STRAIGHT,
         STEER_RIGHT
