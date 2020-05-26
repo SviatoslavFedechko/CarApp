@@ -1,19 +1,23 @@
-package com.company.carapp;
+package com.company.carapp.car;
 
-import com.company.carapp.model.Car;
-import com.company.carapp.model.Engine;
-import com.company.carapp.model.Gearbox;
-import com.company.carapp.model.IgnitionLock;
-import com.company.carapp.model.Wheels;
-import com.company.carapp.model.pedals.BrakeCarPedal;
-import com.company.carapp.model.pedals.GasCarPedal;
-import com.company.carapp.states.CarIsOffState;
-import com.company.carapp.states.CarState;
+import com.company.carapp.car.model.Car;
+import com.company.carapp.car.model.Engine;
+import com.company.carapp.car.model.Gearbox;
+import com.company.carapp.car.model.IgnitionLock;
+import com.company.carapp.car.model.Wheels;
+import com.company.carapp.car.model.pedals.BrakeCarPedal;
+import com.company.carapp.car.model.pedals.GasCarPedal;
+import com.company.carapp.car.states.CarIsOffState;
 
 public class MainApp {
 
     public static void main(String[] args) {
         Car car = getCar();
+        car.getGasPedal().isPressed();
+        car.getBrakePedal().isPressed();
+
+
+        System.out.println(car.hashCode());
 
         car.getState().printStatus();
 

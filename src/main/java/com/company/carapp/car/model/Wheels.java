@@ -1,4 +1,4 @@
-package com.company.carapp.model;
+package com.company.carapp.car.model;
 
 public class Wheels {
 

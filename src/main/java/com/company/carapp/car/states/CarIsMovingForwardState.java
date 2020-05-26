@@ -1,6 +1,6 @@
-package com.company.carapp.states;
+package com.company.carapp.car.states;
 
-import com.company.carapp.model.Car;
+import com.company.carapp.car.model.Car;
 
 public class CarIsMovingForwardState implements CarState {
 

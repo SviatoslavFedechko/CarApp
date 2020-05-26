@@ -1,13 +1,19 @@
-package com.company.carapp.model.pedals;
+package com.company.carapp.car.model.pedals;
 
 import lombok.Getter;
 import lombok.extern.java.Log;
 
 @Log
 @Getter
-public class GasCarPedal implements Pressable {
+public class GasCarPedal implements Pressable  {
+
+    private static int some = 1;
 
     private boolean pressed;
+
+    public static String test () {
+        return "";
+    }
 
     public void press() {
         pressed = true;
@@ -20,7 +26,5 @@ public class GasCarPedal implements Pressable {
         pressed = false;
     }
 
-    public boolean isPressed() {
-        return pressed;
-    }
+
 }

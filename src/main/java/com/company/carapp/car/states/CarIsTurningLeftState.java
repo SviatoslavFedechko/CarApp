@@ -1,8 +1,8 @@
-package com.company.carapp.states;
+package com.company.carapp.car.states;
 
-import com.company.carapp.model.Car;
+import com.company.carapp.car.model.Car;
 
-public class CarStoppedState implements CarState {
+public class CarIsTurningLeftState implements CarState {
 
     public void insertKey(Car car) {
 
@@ -25,7 +25,8 @@ public class CarStoppedState implements CarState {
     }
 
     public void pressGas(Car car) {
-
+        car.getGasPedal().press();
+        car.setState(new CarIsMovingForwardState());
     }
 
     public void releaseGas(Car car) {
@@ -37,7 +38,7 @@ public class CarStoppedState implements CarState {
     }
 
     public void steerStraight(Car car) {
-
+        car.getWheels().steerStraight();
     }
 
     public void steerRight(Car car) {
@@ -45,8 +46,7 @@ public class CarStoppedState implements CarState {
     }
 
     public void putCarInPark(Car car) {
-        car.getGearbox().enableParkMode();
-        car.setState(new CarParkedState());
+
     }
 
     public void putCarInDrive(Car car) {
@@ -58,6 +58,6 @@ public class CarStoppedState implements CarState {
     }
 
     public void printStatus() {
-        System.out.println("Car is stopped");
+        System.out.println("The car is turning left");
     }
 }

@@ -1,8 +1,9 @@
-package com.company.carapp.states;
+package com.company.carapp.car.states;
 
-import com.company.carapp.model.Car;
+import com.company.carapp.car.model.Car;
 
-public class CarParkedState implements CarState{
+public class EngineRunningState implements CarState {
+
 
     public void insertKey(Car car) {
 
@@ -25,7 +26,8 @@ public class CarParkedState implements CarState{
     }
 
     public void pressGas(Car car) {
-
+        car.getGasPedal().press();
+        car.setState(new CarIsMovingForwardState());
     }
 
     public void releaseGas(Car car) {
@@ -45,11 +47,11 @@ public class CarParkedState implements CarState{
     }
 
     public void putCarInPark(Car car) {
-
+        car.getGearbox().enableParkMode();
     }
 
     public void putCarInDrive(Car car) {
-
+        car.getGearbox().enableDriveMode();
     }
 
     public void putCarInReverse(Car car) {
@@ -57,6 +59,6 @@ public class CarParkedState implements CarState{
     }
 
     public void printStatus() {
-        System.out.println("Well done - car is parked!");
+        System.out.println("The engine is running");
     }
 }

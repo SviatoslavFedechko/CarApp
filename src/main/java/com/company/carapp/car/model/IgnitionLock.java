@@ -1,4 +1,4 @@
-package com.company.carapp.model;
+package com.company.carapp.car.model;
 
 import lombok.Getter;
 import lombok.extern.java.Log;

@@ -1,7 +1,7 @@
-package com.company.carapp.model;
+package com.company.carapp.car.model;
 
-import com.company.carapp.model.pedals.Pressable;
-import com.company.carapp.states.CarState;
+import com.company.carapp.car.model.pedals.Pressable;
+import com.company.carapp.car.states.CarState;
 import lombok.Builder;
 import lombok.Data;
 
