@@ -2,17 +2,19 @@ package com.company.carapp.car;
 
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class TestApp {
 
 
-    List<Integer> profit = Arrays.asList(-2, 5, 3, -1, -8, 7, 6, 1);
-    //        System.out.println(calculateMaxSegmentsValue(4, profit));
+
 
     public static void main(String[] args) throws IOException {
-        System.out.println(findSmallestDivision("bcdbcdbcd", "bcdbcd"));
+        List<Integer> profit = Arrays.asList(-2, 5, 3, -1, -8, 7, 6, 1);
+//        System.out.println(calculateMaxSegmentsValue(4, profit));
+//        System.out.println(findSmallestDivision("bcdbcdbcd", "bcdbcd"));
     }
 
     private static int findSmallestDivision(String s, String t) {

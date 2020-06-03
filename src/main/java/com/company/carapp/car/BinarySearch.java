@@ -1,5 +1,6 @@
 package com.company.carapp.car;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -77,5 +78,16 @@ public class BinarySearch {
         int res = list2.parallelStream().reduce(1, (s1, s2) -> s1 + s2, (p, q) -> p * q);
         System.out.println(res);
 
+    }
+
+    private static List<Integer> revertList(List<Integer> profit) {
+        if (profit.size() <= 1) {
+            return profit;
+        }
+        List<Integer> reversed = new ArrayList<>();
+        reversed.add(profit.get(profit.size() - 1));
+        reversed.addAll(revertList(profit.subList(0, profit.size() - 1)));
+
+        return reversed;
     }
 }
